@@ -41,14 +41,14 @@ export const ResultCard = ({ movie }) => {
           </div>
           <div className="controls">
             <button
-              className="mr-2 rounded-md bg-teal-400 px-2 py-2 text-gray-700"
+              className="mr-2 rounded-md bg-teal-400 px-2 py-2 text-gray-700 disabled:cursor-default disabled:opacity-50"
               onClick={() => addMovieToWatchlist(movie)}
               disabled={watchlistDisable}
             >
               Add to Watchlist
             </button>
             <button
-              className="rounded-md bg-teal-400 px-2 py-2 text-gray-700"
+              className="disabled:opaci rounded-md bg-teal-400 px-2 py-2 text-gray-700 disabled:cursor-default disabled:opacity-50"
               onClick={() => addMovieToWatched(movie)}
               disabled={watchedDisable}
             >
