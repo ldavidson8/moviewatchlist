@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer base {
+  /* rubik-regular - latin */
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url("./fonts/rubik-v19-latin-regular.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./fonts/rubik-v19-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* rubik-600 - latin */
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    src: local(""), url("./fonts/rubik-v19-latin-600.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./fonts/rubik-v19-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  to {
-    transform: rotate(360deg);
+  /* rubik-700 - latin */
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url("./fonts/rubik-v19-latin-700.woff2") format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url("./fonts/rubik-v19-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  body {
+    @apply flex h-full flex-col bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-200;
+  }
+
+  #footer-pin {
+    @apply min-h-[calc(100%_-_97px)];
   }
 }
