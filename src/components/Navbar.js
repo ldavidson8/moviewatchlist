@@ -5,14 +5,14 @@ export const Navbar = () => {
   return (
     <header className="relative top-0 left-0 right-0 w-full bg-gray-800 text-gray-100">
       <div className="mx-auto flex h-[75px] max-w-screen-xl items-center">
-        <div className="flex w-full justify-between">
-          <div className="w-1/4 text-2xl">
+        <nav className="flex w-full justify-between px-12 xl:p-0">
+          <div className="text-2xl">
             <Link to="/">
               <PlayCircleOutlineIcon />
               WatchList
             </Link>
           </div>
-          <ul className="flex w-1/2 items-center justify-between">
+          <ul className="hidden w-1/2 items-center justify-between sm:flex">
             <li>
               <Link to="/">Watch List</Link>
             </li>
@@ -28,7 +28,7 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   );

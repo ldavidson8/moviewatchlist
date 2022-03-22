@@ -5,6 +5,7 @@ import { Watched } from "./components/Watched";
 import { Add } from "./components/Add";
 import "./App.css";
 import { GlobalProvider } from "./context/GlobalState";
+import { BottomNav } from "./components/BottomNavigation";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/watched" element={<Watched />} />
             <Route path="/add" element={<Add />} />
           </Routes>
+          <BottomNav />
         </BrowserRouter>
       </GlobalProvider>
     </>

@@ -9,10 +9,10 @@ export const MovieCard = ({ movie, type }) => {
           <img
             src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
             alt={`${movie.title} Poster`}
-            className="block w-full rounded-md"
+            className="block h-full w-full rounded-md"
           />
         ) : (
-          <div className="mr-4 block h-[340px] w-full rounded-md bg-gray-500"></div>
+          <div className="mr-4 block h-full w-full rounded-md bg-gray-500"></div>
         )}
         <h2 className="absolute top-1/2 left-2 text-xl opacity-0 duration-200 group-hover:opacity-100 group-hover:transition-opacity group-hover:delay-150">
           {movie.title}
