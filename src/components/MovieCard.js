@@ -14,7 +14,7 @@ export const MovieCard = ({ movie, type }) => {
         ) : (
           <div className="mr-4 block h-full w-full rounded-md bg-gray-500"></div>
         )}
-        <h2 className="absolute top-1/2 left-2 text-xl opacity-0 duration-200 group-hover:opacity-100 group-hover:transition-opacity group-hover:delay-150">
+        <h2 className="absolute top-1/2 left-5 text-xl opacity-0 duration-200 group-hover:opacity-100 group-hover:transition-opacity group-hover:delay-150">
           {movie.title}
         </h2>
 

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const BottomNav = () => {
   return (
     <>
-      <div className="fixed bottom-0 h-[80px] w-full bg-gray-700 shadow-xl">
+      <div className="fixed bottom-0 h-[80px] w-full bg-gray-700 shadow-xl sm:hidden">
         <div className="grid h-full grid-cols-3">
           <Link
             to="/"
